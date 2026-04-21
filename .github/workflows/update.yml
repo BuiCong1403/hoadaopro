@@ -2,8 +2,8 @@ name: Auto Update M3U
 
 on:
   schedule:
-    - cron: '0 */3 * * *'   # ⏰ chạy mỗi 3 giờ
-  workflow_dispatch:        # cho phép chạy tay
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -22,30 +22,24 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Cache pip (tăng tốc)
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip
-          restore-keys: |
-            ${{ runner.os }}-pip
-
       - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install requests beautifulsoup4
 
-      - name: Run script
+      - name: Run script (DEBUG)
         run: |
-          python main.py   # ⚠️ đổi nếu file bạn tên khác
+          echo "Running script..."
+          ls -la
+          python main.py
 
-      - name: Commit & Push nếu có thay đổi
+      - name: Commit & Push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
           git add *.m3u
 
-          git diff --cached --quiet || git commit -m "auto update m3u (3h)"
+          git diff --cached --quiet || git commit -m "auto update m3u"
 
           git push
