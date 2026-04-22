@@ -1,4 +1,49 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="",Fallback Channel
-https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp São Paulo - SP vs Juventude - Chim Nhỏ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-chim-nho.flv
+
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Boston Celtics vs Philadelphia 76ers - Dưa Hấu
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-dua-hau.flv
+
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp NXT vs NXT - Pháo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-phao.flv
+
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp San Antonio Spurs vs Portland Trail Blazers - A Mập
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-a-map.flv
+
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Queretaro FC vs Cruz Azul - Táo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-tao.flv
+
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Los Angeles Lakers vs Houston Rockets - Văn Chuẩn
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-van-chuan.flv
+
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Vietnam U17 vs Australia U17 - Neymar
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-thay-ma.flv
+
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Vietnam U17 vs Australia U17 - Cháo Quẩy
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-chao-quay.flv
+
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Termez Surkhon vs Mashal Muborak - Mèo Béo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-meo-beo.flv
+
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Gazovik Orenburg vs FC Pari Nizhniy Novgorod - Dylan
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-dylan.flv
+
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Bodo Glimt vs KFUM Oslo - A Tai
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-gio-tai.flv
+
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Elche vs Atletico Madrid - Người Kiến
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-nguoi-kien.flv
 
