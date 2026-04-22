@@ -1,27 +1,19 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp São Paulo - SP vs Juventude - Chim Nhỏ
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2030.info/str01/blv-chim-nho.flv
-
 #EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Boston Celtics vs Philadelphia 76ers - Dưa Hấu
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://pull.globalcdnnetworksc2030.info/str01/blv-dua-hau.flv
-
-#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp NXT vs NXT - Pháo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2030.info/str01/blv-phao.flv
 
 #EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp San Antonio Spurs vs Portland Trail Blazers - A Mập
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://pull.globalcdnnetworksc2030.info/str01/blv-a-map.flv
 
-#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Queretaro FC vs Cruz Azul - Táo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2030.info/str01/blv-tao.flv
-
 #EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Los Angeles Lakers vs Houston Rockets - Văn Chuẩn
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://pull.globalcdnnetworksc2030.info/str01/blv-van-chuan.flv
+
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp PSIM Yogyakarta vs Persatuan Sepakbola Indonesia Jakarta - Chim Nhỏ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-chim-nho.flv
 
 #EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Vietnam U17 vs Australia U17 - Neymar
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
@@ -39,6 +31,10 @@ https://pull.globalcdnnetworksc2030.info/str01/blv-meo-beo.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://pull.globalcdnnetworksc2030.info/str01/blv-dylan.flv
 
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Buxoro FK vs Pakhtakor - Táo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-tao.flv
+
 #EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Bodo Glimt vs KFUM Oslo - A Tai
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://pull.globalcdnnetworksc2030.info/str01/blv-gio-tai.flv
@@ -46,4 +42,8 @@ https://pull.globalcdnnetworksc2030.info/str01/blv-gio-tai.flv
 #EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Elche vs Atletico Madrid - Người Kiến
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://pull.globalcdnnetworksc2030.info/str01/blv-nguoi-kien.flv
+
+#EXTINF:-1 tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Bayer 04 Leverkusen vs FC Bayern Munich - Pháo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-phao.flv
 
