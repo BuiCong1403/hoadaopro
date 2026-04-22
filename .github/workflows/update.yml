@@ -1,4 +1,4 @@
-name: Auto Update M3U
+name: Update M3U PRO MAX
 
 on:
   schedule:
@@ -9,12 +9,11 @@ permissions:
   contents: write
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
 
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Python
@@ -22,24 +21,20 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
+      - name: Install libs
         run: |
-          pip install --upgrade pip
           pip install requests beautifulsoup4
 
-      - name: Run script (DEBUG)
-        run: |
-          echo "Running script..."
-          ls -la
-          python main.py
+      - name: Run script
+        run: python main.py
 
-      - name: Commit & Push
+      - name: Commit
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
           git add *.m3u
 
-          git diff --cached --quiet || git commit -m "auto update m3u"
+          git diff --cached --quiet || git commit -m "update m3u"
 
           git push
