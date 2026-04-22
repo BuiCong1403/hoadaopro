@@ -1,13 +1,25 @@
 #EXTM3U
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Gazovik Orenburg vs FC Pari Nizhniy Novgorod - Dylan
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Paris Saint Germain vs FC Nantes - Cháo Quẩy
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2030.info/str01/blv-dylan.flv
+https://pull.globalcdnnetworksc2030.info/str01/blv-chao-quay.flv
 
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Buxoro FK vs Pakhtakor - Táo
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Real Sociedad vs Getafe - Táo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://pull.globalcdnnetworksc2030.info/str01/blv-tao.flv
 
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Bodo Glimt vs KFUM Oslo - A Tai
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Bayer 04 Leverkusen vs FC Bayern Munich - Pháo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-phao.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Burnley vs Manchester City - Mèo Béo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-meo-beo.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Bournemouth AFC vs Leeds United - A Tai
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://pull.globalcdnnetworksc2030.info/str01/blv-gio-tai.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Atalanta vs Lazio - Dylan
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-dylan.flv
 
