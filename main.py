@@ -2,37 +2,37 @@ import requests
 import re
 from bs4 import BeautifulSoup
 from datetime import datetime
+import time
 
 BASE_URL = "https://hoadaotv.info"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0",
-    "Referer": BASE_URL
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "Referer": BASE_URL,
+    "Accept": "*/*"
 }
 
 
+# ✅ retry fetch (chống bị block)
+def fetch(url):
+    for i in range(3):
+        try:
+            res = requests.get(url, headers=HEADERS, timeout=15)
+            if res.status_code == 200:
+                return res.text
+        except:
+            time.sleep(1)
+    return ""
+
+
+# ✅ quét mạnh tất cả stream
 def extract_streams(html):
-    streams = []
-
-    # ✅ 1. Bắt JSON dạng "hd" / "flv"
-    for key in ["hd", "hls", "flv"]:
-        matches = re.findall(rf'"{key}":"([^"]+)"', html)
-        for m in matches:
-            streams.append(m.replace("\\/", "/"))
-
-    # ✅ 2. Regex trực tiếp m3u8 + flv (fallback)
-    direct = re.findall(r'https?://[^"\']+\.(m3u8|flv)', html)
-    for d in direct:
-        if isinstance(d, tuple):
-            continue
-
-    direct_full = re.findall(r'https?://[^"\']+\.(?:m3u8|flv)', html)
-    streams.extend(direct_full)
-
-    # ❌ loại trùng
-    return list(set(streams))
+    return list(set(
+        re.findall(r'https?://[^"\']+\.(?:m3u8|flv)', html)
+    ))
 
 
+# ✅ chọn link tốt nhất
 def pick_best(streams):
     m3u8_hd = None
     m3u8 = None
@@ -52,60 +52,95 @@ def pick_best(streams):
     return m3u8_hd or m3u8 or flv
 
 
-def process_hoadao_pro():
-    matches = []
+# ✅ crawl hoadao
+def process_hoadao():
+    results = []
 
-    try:
-        res = requests.get(BASE_URL, headers=HEADERS, timeout=15)
-        soup = BeautifulSoup(res.text, "html.parser")
+    html = fetch(BASE_URL)
+    if not html:
+        print("❌ Không load được trang chủ")
+        return results
 
-        links = set()
+    soup = BeautifulSoup(html, "html.parser")
 
-        # ✅ quét rộng để không miss
-        for a in soup.find_all("a", href=True):
-            href = a["href"]
+    links = set()
 
-            if any(x in href for x in ["truc-tiep", "xem-bong-da", "live"]):
-                url = href if href.startswith("http") else BASE_URL + href
-                links.add(url)
+    # quét rộng để tránh miss
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if any(x in href for x in ["truc-tiep", "xem", "live"]):
+            url = href if href.startswith("http") else BASE_URL + href
+            links.add(url)
 
-        print(f"[HoaDao] Found {len(links)} pages")
+    print(f"🔎 Found {len(links)} match pages")
 
-        for url in links:
-            try:
-                r = requests.get(url, headers=HEADERS, timeout=10)
-                html = r.text
+    for url in links:
+        page = fetch(url)
+        if not page:
+            continue
 
-                streams = extract_streams(html)
-                if not streams:
-                    continue
+        streams = extract_streams(page)
 
-                best = pick_best(streams)
-                if not best:
-                    continue
+        print("👉", url)
+        print("   streams:", len(streams))
 
-                s = BeautifulSoup(html, "html.parser")
+        if not streams:
+            continue
 
-                title = "HoaDao TV"
-                h1 = s.find("h1")
-                if h1:
-                    title = h1.get_text(strip=True)
+        best = pick_best(streams)
+        if not best:
+            continue
 
-                matches.append({
-                    "time": datetime.now(),
-                    "group": "🔥 HOA ĐÀO PRO",
-                    "title": title,
-                    "logo": BASE_URL + "/favicon.ico",
-                    "url": best
-                })
+        s = BeautifulSoup(page, "html.parser")
 
-                print("OK:", title)
+        title = "HoaDao TV"
+        h1 = s.find("h1")
+        if h1:
+            title = h1.get_text(strip=True)
 
-            except Exception as e:
-                print("Item lỗi:", e)
-                continue
+        results.append({
+            "title": title,
+            "logo": BASE_URL + "/favicon.ico",
+            "url": best
+        })
 
-    except Exception as e:
-        print("Lỗi hoadao:", e)
+    print(f"✅ Hoadao lấy được: {len(results)} kênh")
+    return results
 
-    return matches
+
+# ✅ fallback nếu hoadao die
+def fallback():
+    print("⚠️ Dùng fallback")
+
+    return [{
+        "title": "Fallback Channel",
+        "logo": "",
+        "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+    }]
+
+
+# ✅ ghi file
+def write_m3u(data):
+    content = "#EXTM3U\n"
+
+    for item in data:
+        content += f'#EXTINF:-1 tvg-logo="{item["logo"]}",{item["title"]}\n'
+        content += f'{item["url"]}\n\n'
+
+    with open("hoadaopro.m3u", "w", encoding="utf-8") as f:
+        f.write(content)
+
+    print(f"📺 Ghi file thành công: {len(data)} kênh")
+
+
+# 🚀 MAIN
+if __name__ == "__main__":
+    data = process_hoadao()
+
+    # ❗ chống rỗng
+    if not data:
+        data = fallback()
+
+    write_m3u(data)
+
+    print("✅ DONE")
