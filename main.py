@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 
 # ===== CONFIG =====
 BASE_URL = "https://hoadaotv.info"
+QUECHOA_URL = "https://quechoatv1.net/"
 BACKUP_M3U = "https://raw.githubusercontent.com/nhanb2004798/watchfbfree/refs/heads/main/watchfrhd.m3u"
 
 HEADERS = {
@@ -22,10 +23,9 @@ def fetch(url):
         return ""
 
 
-# ===== HOADAO (FLV CHUẨN) =====
+# ===== HOADAO =====
 def get_hoadao():
     data = []
-
     html = fetch(BASE_URL)
     if not html:
         return data
@@ -40,15 +40,12 @@ def get_hoadao():
             if url not in links:
                 links.append(url)
 
-    print(f"[HoaDao] {len(links)} pages")
-
     for url in links:
         try:
             html = fetch(url)
             if not html:
                 continue
 
-            # lấy FLV (chuẩn nhất)
             flv = re.search(r'"flv":"([^"]+)"', html)
             hls = re.search(r'"hd":"([^"]+)"', html)
 
@@ -72,19 +69,44 @@ def get_hoadao():
                 "logo": BASE_URL + "/favicon.ico",
                 "url": stream
             })
-
-            print("✅ HoaDao:", title)
-
         except:
             continue
 
+    print(f"[HoaDao] {len(data)}")
     return data
 
 
-# ===== BACKUP M3U =====
-def get_backup():
+# ===== QUECHOA =====
+def get_quechoa():
     data = []
 
+    html = fetch(QUECHOA_URL)
+    if not html:
+        return data
+
+    # quét m3u8 trực tiếp
+    m3u8_links = re.findall(r'https?://[^"\']+\.m3u8[^"\']*', html)
+
+    # quét iframe (nếu có)
+    iframes = re.findall(r'<iframe[^>]+src="([^"]+)"', html)
+    for i in iframes:
+        sub = fetch(i)
+        m3u8_links += re.findall(r'https?://[^"\']+\.m3u8[^"\']*', sub)
+
+    for idx, link in enumerate(set(m3u8_links)):
+        data.append({
+            "title": f"QueChoa {idx+1}",
+            "logo": "",
+            "url": link
+        })
+
+    print(f"[QueChoa] {len(data)}")
+    return data
+
+
+# ===== BACKUP =====
+def get_backup():
+    data = []
     text = fetch(BACKUP_M3U)
     if not text:
         return data
@@ -103,18 +125,16 @@ def get_backup():
             logo = m.group(1) if m else ""
 
         elif line.startswith("http"):
-            url = line
-
-            if any(x in url for x in ["udp://", "rtp://"]):
+            if any(x in line for x in ["udp://", "rtp://"]):
                 continue
 
             data.append({
                 "title": title,
                 "logo": logo,
-                "url": url
+                "url": line
             })
 
-    print(f"[Backup] {len(data)} channels")
+    print(f"[Backup] {len(data)}")
     return data
 
 
@@ -132,7 +152,7 @@ def clean(data):
     return out
 
 
-# ===== SORT =====
+# ===== SORT (ưu tiên m3u8 > flv) =====
 def sort_data(data):
     return sorted(data, key=lambda x: (
         ".m3u8" not in x["url"],
@@ -145,7 +165,7 @@ def write(data):
     content = "#EXTM3U\n"
 
     for item in data:
-        content += f'#EXTINF:-1 tvg-logo="{item["logo"]}",{item["title"]}\n'
+        content += f'#EXTINF:-1 group-title="PRO MAX" tvg-logo="{item["logo"]}",{item["title"]}\n'
         content += f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n'
         content += f'{item["url"]}\n\n'
 
@@ -158,12 +178,12 @@ def write(data):
 # ===== MAIN =====
 if __name__ == "__main__":
     hoadao = get_hoadao()
+    quechoa = get_quechoa()
     backup = get_backup()
 
-    all_data = hoadao + backup
+    all_data = hoadao + quechoa + backup
 
     if not all_data:
-        print("❌ NO DATA → dùng fallback cứng")
         all_data = [{
             "title": "Test Channel",
             "logo": "",
