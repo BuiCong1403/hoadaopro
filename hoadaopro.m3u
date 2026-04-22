@@ -1,13 +1,13 @@
 #EXTM3U
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Preah Khan Reach Svay Rieng FC vs Bangkok United FC - Người Kiến
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Gazovik Orenburg vs FC Pari Nizhniy Novgorod - Dylan
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2030.info/str01/blv-nguoi-kien.flv
+https://pull.globalcdnnetworksc2030.info/str01/blv-dylan.flv
 
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Vietnam U17 vs Australia U17 - Neymar
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Buxoro FK vs Pakhtakor - Táo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2030.info/str01/blv-thay-ma.flv
+https://pull.globalcdnnetworksc2030.info/str01/blv-tao.flv
 
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Vietnam U17 vs Australia U17 - Cháo Quẩy
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Bodo Glimt vs KFUM Oslo - A Tai
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2030.info/str01/blv-chao-quay.flv
+https://pull.globalcdnnetworksc2030.info/str01/blv-gio-tai.flv
 
