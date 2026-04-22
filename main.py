@@ -2,7 +2,6 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
-# ===== CONFIG =====
 BASE_URL = "https://hoadaotv.info"
 QUECHOA_URL = "https://quechoatv1.net/"
 BACKUP_M3U = "https://raw.githubusercontent.com/nhanb2004798/watchfbfree/refs/heads/main/watchfrhd.m3u"
@@ -16,11 +15,20 @@ HEADERS = {
 # ===== FETCH =====
 def fetch(url):
     try:
-        res = requests.get(url, headers=HEADERS, timeout=15)
+        res = requests.get(url, headers=HEADERS, timeout=10)
         res.encoding = "utf-8"
         return res.text
     except:
         return ""
+
+
+# ===== TEST LINK SỐNG =====
+def is_alive(url):
+    try:
+        r = requests.head(url, timeout=5, allow_redirects=True)
+        return r.status_code < 400
+    except:
+        return False
 
 
 # ===== HOADAO =====
@@ -65,6 +73,7 @@ def get_hoadao():
                 title = h1.get_text(strip=True)
 
             data.append({
+                "group": "🔴 HoaDao",
                 "title": title,
                 "logo": BASE_URL + "/favicon.ico",
                 "url": stream
@@ -79,15 +88,12 @@ def get_hoadao():
 # ===== QUECHOA =====
 def get_quechoa():
     data = []
-
     html = fetch(QUECHOA_URL)
     if not html:
         return data
 
-    # quét m3u8 trực tiếp
     m3u8_links = re.findall(r'https?://[^"\']+\.m3u8[^"\']*', html)
 
-    # quét iframe (nếu có)
     iframes = re.findall(r'<iframe[^>]+src="([^"]+)"', html)
     for i in iframes:
         sub = fetch(i)
@@ -95,6 +101,7 @@ def get_quechoa():
 
     for idx, link in enumerate(set(m3u8_links)):
         data.append({
+            "group": "🟢 QueChoa",
             "title": f"QueChoa {idx+1}",
             "logo": "",
             "url": link
@@ -129,6 +136,7 @@ def get_backup():
                 continue
 
             data.append({
+                "group": "🔵 Backup",
                 "title": title,
                 "logo": logo,
                 "url": line
@@ -152,7 +160,17 @@ def clean(data):
     return out
 
 
-# ===== SORT (ưu tiên m3u8 > flv) =====
+# ===== FILTER LIVE =====
+def filter_alive(data):
+    alive = []
+    for item in data:
+        if is_alive(item["url"]):
+            alive.append(item)
+    print(f"[Alive] {len(alive)}/{len(data)}")
+    return alive
+
+
+# ===== SORT =====
 def sort_data(data):
     return sorted(data, key=lambda x: (
         ".m3u8" not in x["url"],
@@ -165,7 +183,7 @@ def write(data):
     content = "#EXTM3U\n"
 
     for item in data:
-        content += f'#EXTINF:-1 group-title="PRO MAX" tvg-logo="{item["logo"]}",{item["title"]}\n'
+        content += f'#EXTINF:-1 group-title="{item["group"]}" tvg-logo="{item["logo"]}",{item["title"]}\n'
         content += f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n'
         content += f'{item["url"]}\n\n'
 
@@ -185,12 +203,21 @@ if __name__ == "__main__":
 
     if not all_data:
         all_data = [{
+            "group": "TEST",
             "title": "Test Channel",
             "logo": "",
             "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
         }]
 
     all_data = clean(all_data)
+
+    # 🔥 lọc link chết
+    all_data = filter_alive(all_data)
+
+    # nếu lọc xong rỗng → fallback lại
+    if not all_data:
+        all_data = backup
+
     all_data = sort_data(all_data)
 
     write(all_data)
