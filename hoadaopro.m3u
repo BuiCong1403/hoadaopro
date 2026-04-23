@@ -1,9 +1,93 @@
 #EXTM3U
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Real Salt Lake vs Inter Miami CF - Mèo Béo
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp BRO vs DK - Dưa Hấu
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-dua-hau.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Persita Tangerang vs Bali United - Văn Chuẩn
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-van-chuan.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp GEN vs DNS - Dưa Hấu
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-dua-hau.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Malut United vs Persebaya Surabaya - Táo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-tao.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Zorya vs FC Shakhtar Donetsk - A Tai
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-gio-tai.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Hà Nội Nữ vs Thông Tin Nữ - Chim Nhỏ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-chim-nho.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Al-Sharjah vs Al Wahda(UAE) - Neymar
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-thay-ma.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Biên Phòng MB vs Hà Nội - Pháo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-phao.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp El Mokawloon El Arab vs Ittihad Alexandria SC - Người Kiến
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-nguoi-kien.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Istanbul GSK vs Fenerbahce - A Mập
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-a-map.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Al Najma(KSA) vs Al Taawoun - Mèo Béo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://pull.globalcdnnetworksc2030.info/str01/blv-meo-beo.flv
 
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Los Angeles FC vs Colorado Rapids - Táo
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Levante vs Sevilla FC - Mèo Béo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2030.info/str01/blv-tao.flv
+https://pull.globalcdnnetworksc2030.info/str01/blv-meo-beo.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Rayo Vallecano vs RCD Espanyol de Barcelona - Người Kiến
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-nguoi-kien.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Al Hilal vs Al Kholood - Cháo Quẩy
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-chao-quay.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Al Hilal vs Al Kholood - Neymar
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-thay-ma.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp VfB Stuttgart vs SC Freiburg - A Mập
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-a-map.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Real Oviedo vs Villarreal CF - Pháo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-phao.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp SCU Torreense vs AD Fafe - Dylan
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-dylan.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Atlético Mineiro - MG vs Ceara - A Tai
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-gio-tai.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Palmeiras - SP vs EC Jacuipense - Chim Nhỏ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-chim-nho.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Atlanta Hawks vs New York Knicks - Văn Chuẩn
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-van-chuan.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Operario Ferroviario PR vs Fluminense - RJ - Chim Nhỏ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-chim-nho.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Minnesota Timberwolves vs Denver Nuggets - Văn Chuẩn
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2030.info/str01/blv-van-chuan.flv
 
