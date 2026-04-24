@@ -1,21 +1,25 @@
 #EXTM3U
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Jannik Sinner vs Benjamin Bonzi - Người Kiến
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2031.info/str01/blv-nguoi-kien.flv
-
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Công An TPHCM vs Thể Công Tân Cảng - Pháo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2031.info/str01/blv-phao.flv
-
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Sebastian Ofner vs Tomas Martin Etcheverry - Người Cát
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Đan Mạch vs Hàn Quốc - Người Cát
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://pull.globalcdnnetworksc2031.info/str01/blv-nguoi-cat.flv
 
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Vaasa VPS vs Ilves Tampere - Dylan
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp RB Leipzig vs 1. FC Union Berlin - A Tai
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2031.info/str01/blv-gio-tai.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Napoli vs Cremonese - Mèo Béo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Stade Brestois 29 vs RC Lens - Dylan
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://pull.globalcdnnetworksc2031.info/str01/blv-dylan.flv
 
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Galatasaray vs Ziraat Bankasi - Mèo Béo
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Real Betis vs Real Madrid - A Mập
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo.flv
+https://pull.globalcdnnetworksc2031.info/str01/blv-a-map.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Real Betis vs Real Madrid - Cháo Quẩy
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2031.info/str01/blv-chao-quay.flv
 
