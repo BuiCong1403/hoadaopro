@@ -1,5 +1,13 @@
 #EXTM3U
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Minnesota Timberwolves vs Denver Nuggets - Văn Chuẩn
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Inter Miami CF vs New England Revolution - Chim Nhỏ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2031.info/str01/blv-van-chuan.flv
+https://pull.globalcdnnetworksc2031.info/str01/blv-chim-nho.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Indonesia vs Thái Lan - Người Kiến
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2031.info/str01/blv-nguoi-kien.flv
+
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Melbourne City vs Adelaide United - Cháo Quẩy
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://pull.globalcdnnetworksc2031.info/str01/blv-chao-quay.flv
 
