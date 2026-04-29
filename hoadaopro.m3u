@@ -1,13 +1,13 @@
 #EXTM3U
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Indonesia vs Thái Lan - Người Kiến
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Melbourne City vs Adelaide United - Cháo Quẩy
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2031.info/str01/blv-nguoi-kien.flv
+https://pull.globalcdnnetworksc2031.info/str01/blv-chao-quay.flv
 
 #EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Sorana Cîrstea vs Coco Gauff - Người Cát
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://pull.globalcdnnetworksc2031.info/str01/blv-nguoi-cat.flv
 
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp SHB Da Nang vs The Cong Viettel - A Mập
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Hong Linh Ha Tinh vs Cong An Ho Chi Minh City - Mèo Béo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2031.info/str01/blv-a-map.flv
+https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo.flv
 
