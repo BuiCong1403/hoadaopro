@@ -1,8 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Atlanta Hawks vs New York Knicks - Dưa Hấu
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2031.info/str01/blv-dua-hau.flv
-
 #EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Minnesota Timberwolves vs Denver Nuggets - Văn Chuẩn
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://pull.globalcdnnetworksc2031.info/str01/blv-van-chuan.flv
