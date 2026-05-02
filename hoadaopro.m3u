@@ -1,9 +1,5 @@
 #EXTM3U
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Inter Miami CF vs New England Revolution - Chim Nhỏ
+#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Atlanta Hawks vs New York Knicks - Dưa Hấu
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2031.info/str01/blv-chim-nho.flv
-
-#EXTINF:-1 group-title="🔵 Backup" tvg-logo="https://hoadaotv.info/assets/image/hoadaotvlogo.png", Xem Trực Tiếp Hong Linh Ha Tinh vs Cong An Ho Chi Minh City - Mèo Béo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo.flv
+https://pull.globalcdnnetworksc2031.info/str01/blv-dua-hau.flv
 
